@@ -1,12 +1,13 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Benchmarking
+namespace Benchmarking;
+
+internal class Program
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            var summary = BenchmarkRunner.Run<StringComparison>();
-        }
+        //BenchmarkRunner.Run<StringComparison>();
+        BenchmarkRunner.Run<FsmUtil.FsmUtilBenchmarkBase>();
     }
 }
+

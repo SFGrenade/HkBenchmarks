@@ -18,7 +18,7 @@ public class StringComparison
         };
     }
 
-    [Benchmark(Baseline = true)]
+    [Benchmark]
     public string LinqFirstOrDefault()
     {
         return tc.FirstOrDefault(x => x == ttsf);
@@ -72,7 +72,7 @@ public class StringComparison
         return null;
     }
 
-    [Benchmark]
+    [Benchmark(Baseline = true)]
     public string ForLoop_StringLength()
     {
         int textToSearchForLength = ttsf.Length;
