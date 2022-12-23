@@ -53,3 +53,17 @@ AMD Ryzen 7 3700X, 1 CPU, 16 logical and 8 physical cores
 |                        For_Fsm_FsmStates_56_1_Modified_StringLength | 11.782 μs | 0.2258 μs | 0.2856 μs | 11.647 μs |  2.79 |    0.07 |
 |                                     For_Fsm_FsmStates_56_2_Modified |  4.858 μs | 0.0959 μs | 0.1281 μs |  4.792 μs |  1.16 |    0.04 |
 |                        For_Fsm_FsmStates_56_2_Modified_StringLength |  4.483 μs | 0.0878 μs | 0.0976 μs |  4.465 μs |  1.05 |    0.03 |
+
+### ReflectionBenchmark
+
+``` ini
+BenchmarkDotNet=v0.13.2, OS=Windows 10 (10.0.19044.2364/21H2/November2021Update)
+AMD Ryzen 7 3700X, 1 CPU, 16 logical and 8 physical cores
+  [Host]     : .NET Framework 4.8 (4.8.4515.0), X64 RyuJIT VectorSize=256
+  DefaultJob : .NET Framework 4.8 (4.8.4515.0), X64 RyuJIT VectorSize=256
+```
+|               Method |        Mean |     Error |    StdDev |      Median |
+|--------------------- |------------:|----------:|----------:|------------:|
+|       ReflectionTest | 131.6165 ns | 1.6568 ns | 1.4687 ns | 131.0296 ns |
+| ReflectionHelperTest |  80.8489 ns | 1.5739 ns | 1.7494 ns |  80.3541 ns |
+|     NoReflectionTest |   0.0122 ns | 0.0214 ns | 0.0190 ns |   0.0000 ns |
