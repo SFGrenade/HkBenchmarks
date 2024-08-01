@@ -11,4 +11,3 @@ internal class Program
         BenchmarkRunner.Run<ReflectionComparison>();
     }
 }
-
