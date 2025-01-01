@@ -69,6 +69,6 @@ AMD Ryzen 7 3700X, 1 CPU, 16 logical and 8 physical cores
 |     NoReflectionTest |   0.0122 ns | 0.0214 ns | 0.0190 ns |   0.0000 ns |
 
 # EUPL
-                      Copyright (c) 2024 SFGrenade
+                      Copyright (c) 2025 SFGrenade
                       Licensed under the EUPL-1.2
 https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
